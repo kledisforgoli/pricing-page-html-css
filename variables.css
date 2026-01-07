@@ -1,0 +1,38 @@
+:root {
+  --primary-bg-color: #0f172a;
+  --secondary-bg-color: #141f3b;
+  --border-color: #1f2937;
+  --text-color: #fff;
+  --secondary-text-color: #c4c9d0;
+  --top-title-color: #6b747f;
+  --most-popular-bg-color: #24acef;
+  --switch-active-color: #1e90ff;
+  --slider-bg-color: #ffffff;
+  --price-bullet-color: green;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 50%;
+
+  --font-xs: 14px;
+  --font-sm: 15px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 24px;
+  --font-xxl: 26px;
+  --font-xxx: 32px;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --transition-fast: 0.2s;
+  --transition-default: 0.4s;
+}
