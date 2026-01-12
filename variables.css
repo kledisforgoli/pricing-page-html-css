@@ -1,20 +1,51 @@
 :root {
-  --primary-bg-color: #0f172a;
-  --secondary-bg-color: #141f3b;
-  --border-color: #1f2937;
-  --text-color: #fff;
-  --secondary-text-color: #c4c9d0;
-  --top-title-color: #6b747f;
-  --most-popular-bg-color: #24acef;
-  --switch-active-color: #1e90ff;
-  --slider-bg-color: #ffffff;
-  --price-bullet-color: green;
+  /* Colors */
+  --color-navy-900: #0f172a;
+  --color-navy-800: #141f3b;
+  --color-navy-700: #1f2937;
+  --color-navy-600: #33435b;
+
+  --color-white: #ffffff;
+  --color-gray-300: #c4c9d0;
+  --color-gray-400: #6b747f;
+  --color-gray-500: #5d646d;
+
+  --color-blue-500: #1e90ff;
+  --color-blue-400: #24acef;
+
+  --color-yellow-500: #e6b30b;
+
+  --color-green-500: #008000;
+  --color-red-600: #c13030;
+  --error-color-: #dba7aa;
+
+  --primary-bg-color: var(--color-navy-900);
+  --secondary-bg-color: var(--color-navy-800);
+  --slider-bg-color: var(--color-white);
+
+  --border-color: var(--color-navy-700);
+  --pricing-border-color: var(--color-navy-600);
+
+  --text-color: var(--color-white);
+  --secondary-text-color: var(--color-gray-300);
+  --top-title-color: var(--color-gray-400);
+  --input-info-color: var(--color-gray-500);
+  --input-bg-color: var(--color-navy-900);
+  --input-border-color: var(--color-navy-600);
+
+  --accent-color: var(--color-yellow-500);
+  --switch-active-color: var(--color-blue-500);
+  --most-popular-bg-color: var(--color-blue-400);
+
+  --price-bullet-color: var(--color-green-500);
+  --error-color: var(--error-color-);
 
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 16px;
   --space-lg: 24px;
   --space-xl: 48px;
+  --space-xxl: 60px;
 
   --radius-sm: 4px;
   --radius-md: 8px;
