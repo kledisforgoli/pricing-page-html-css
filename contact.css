@@ -1,0 +1,85 @@
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  font-family: Verdana, sans-serif;
+  padding: var(--space-md);
+}
+
+.title {
+  margin: 0;
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+  /* background-color: red; */
+}
+.contact-form {
+  border: 1px solid var(--pricing-border-color);
+  border-radius: var(--radius-lg);
+  background-image: linear-gradient(
+    var(--primary-bg-color),
+    var(--secondary-bg-color)
+  );
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 480px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bottom-description {
+  color: var(--secondary-text-color);
+  margin-top: var(--space-md);
+  font-size: var(--font-xs);
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+}
+
+/*  */
+
+.required-span {
+  color: var(--error-color);
+}
+
+.input-info {
+  color: var(--input-info-color);
+  font-size: var(--font-xs);
+}
+
+.input {
+  margin-top: var(--space-sm);
+  background-color: var(--input-bg-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-navy-600);
+  color: var(--color-white);
+}
+
+.range {
+  padding: 0;
+}

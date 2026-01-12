@@ -3,17 +3,26 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Task 1</title>
+    <title>Pricing</title>
     <link rel="stylesheet" href="variables.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
 
   <body>
-<div class="header">
-  <a href="#" class="link">Pricing</a>
-  <a href="#" class="link">Team</a>
-  <a href="#" class="link">Contact</a>
-</div>
+    <header class="header">
+      <input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox" />
+      <label for="hamburger-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu">
+        <a href="team.html" class="link">Team</a>
+        <a href="index.html" class="link active">Pricing</a>
+        <a href="contact.html" class="link">Contact</a>
+      </nav>
+    </header>
 
     <h2 class="title">Simple plans for teams of any size</h2>
     <p class="bottom-description">
@@ -32,51 +41,108 @@
     </div>
 
     <div class="container">
-      <div class="price-card">
-        <h3 class="title">Basic</h3>
-        <p class="description">
-          Great for getting started with simple projects
-        </p>
-        <p class="price monthly">€9/<span class="seat">seat</span></p>
-        <p class="price annual">€90/<span class="seat">seat</span></p>
-        <ul class="features">
-          <li>Up to 3 projects</li>
-          <li>Community support</li>
-          <li>Email reports</li>
-        </ul>
-        <button class="action">Choose Basic</button>
-      </div>
+      <div class="price-card-wrapper">
+        <div class="sparkles-wrapper">
+          <div class="sparkle sparkle-1"></div>
+          <div class="sparkle sparkle-2"></div>
+          <div class="sparkle sparkle-3"></div>
+          <div class="sparkle sparkle-4"></div>
 
-      <div class="price-card popular">
-        <div class="badge">
-          <span>Most Popular</span>
+          <div class="sparkle sparkle-5"></div>
+          <div class="sparkle sparkle-6"></div>
+          <div class="sparkle sparkle-7"></div>
+
+          <div class="sparkle sparkle-12"></div>
+          <div class="sparkle sparkle-13"></div>
+          <div class="sparkle sparkle-14"></div>
         </div>
-        <h3 class="title">Pro</h3>
-        <p class="description">
-          For growing teams that need collaboration tools.
-        </p>
-        <p class="price monthly">€19/<span class="seat">seat</span></p>
-        <p class="price annual">€190/<span class="seat">seat</span></p>
 
-        <ul class="features">
-          <li>Unlimited projects</li>
-          <li>Team workspaces</li>
-          <li>Priority support</li>
-        </ul>
-        <button class="action">Choose Pro</button>
+        <div class="price-card popular">
+          <h3 class="title">Basic</h3>
+          <p class="description">
+            Great for getting started with simple projects
+          </p>
+
+          <p class="price monthly">€9/<span class="seat">seat</span></p>
+          <p class="price annual">€90/<span class="seat">seat</span></p>
+
+          <ul class="features">
+            <li>Up to 3 projects</li>
+            <li>Community support</li>
+            <li>Email reports</li>
+          </ul>
+
+          <button class="action">Choose Basic</button>
+        </div>
       </div>
 
-      <div class="price-card">
-        <p class="title">Premium</p>
-        <p class="description">All features unlocked with advanced controls</p>
-        <p class="price monthly">€39/<span class="seat">seat</span></p>
-        <p class="price annual">€390/<span class="seat">seat</span></p>
-        <ul class="features">
-          <li>Advanced analytics</li>
-          <li>SSo & roles</li>
-          <li>Dedicated manager</li>
-        </ul>
-        <button class="action">Choose Premium</button>
+      <div class="price-card-wrapper">
+        <div class="sparkles-wrapper">
+          <div class="sparkle sparkle-1"></div>
+          <div class="sparkle sparkle-2"></div>
+          <div class="sparkle sparkle-3"></div>
+          <div class="sparkle sparkle-4"></div>
+
+          <div class="sparkle sparkle-5"></div>
+          <div class="sparkle sparkle-6"></div>
+          <div class="sparkle sparkle-7"></div>
+
+          <div class="sparkle sparkle-12"></div>
+          <div class="sparkle sparkle-13"></div>
+          <div class="sparkle sparkle-14"></div>
+        </div>
+
+        <div class="price-card popular">
+          <div class="badge">
+            <span>Most Popular</span>
+          </div>
+
+          <h3 class="title">Pro</h3>
+          <p class="description">
+            For growing teams that need collaboration tools.
+          </p>
+          <p class="price monthly">€19/<span class="seat">seat</span></p>
+          <p class="price annual">€190/<span class="seat">seat</span></p>
+
+          <ul class="features">
+            <li>Unlimited projects</li>
+            <li>Team workspaces</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="action">Choose Pro</button>
+        </div>
+      </div>
+
+      <div class="price-card-wrapper">
+        <div class="sparkles-wrapper">
+          <div class="sparkle sparkle-1"></div>
+          <div class="sparkle sparkle-2"></div>
+          <div class="sparkle sparkle-3"></div>
+          <div class="sparkle sparkle-4"></div>
+
+          <div class="sparkle sparkle-5"></div>
+          <div class="sparkle sparkle-6"></div>
+          <div class="sparkle sparkle-7"></div>
+
+          <div class="sparkle sparkle-12"></div>
+          <div class="sparkle sparkle-13"></div>
+          <div class="sparkle sparkle-14"></div>
+        </div>
+
+        <div class="price-card popular">
+          <p class="title">Premium</p>
+          <p class="description">
+            All features unlocked with advanced controls
+          </p>
+          <p class="price monthly">€39/<span class="seat">seat</span></p>
+          <p class="price annual">€390/<span class="seat">seat</span></p>
+          <ul class="features">
+            <li>Advanced analytics</li>
+            <li>SSo & roles</li>
+            <li>Dedicated manager</li>
+          </ul>
+          <button class="action">Choose Premium</button>
+        </div>
       </div>
     </div>
   </body>
