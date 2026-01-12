@@ -1,0 +1,99 @@
+/* -------- */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--space-md);
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-bg-color);
+  z-index: 100;
+}
+
+/* Hamburger Checkbox (i fshehur) */
+.hamburger-checkbox {
+  display: none;
+}
+
+/* Hamburger Label */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 101;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .header {
+    justify-content: space-between;
+    justify-content: flex-end;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s ease;
+    padding: var(--space-lg) 0;
+    border-bottom: 1px solid var(--border-color);
+    gap: var(--space-md);
+  }
+
+  .hamburger-checkbox:checked ~ .nav-menu {
+    left: 0;
+  }
+
+  .nav-menu .link {
+    font-size: var(--font-md);
+  }
+}
+
+/* ============== */
+
+.header .link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-sm);
+}
+
+.header .link:hover {
+  color: var(--switch-active-color);
+}
+
+.header .link:active {
+  color: var(--switch-active-color);
+}
+
+.header .link.active {
+  color: var(--switch-active-color);
+  font-weight: 600;
+}
