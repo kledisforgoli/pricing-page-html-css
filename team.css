@@ -1,0 +1,150 @@
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  font-family: Verdana, sans-serif;
+  padding: var(--space-md);
+}
+
+.title {
+  margin: 0;
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+}
+
+@media (min-width: 480px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bottom-description {
+  color: var(--secondary-text-color);
+  margin-top: var(--space-md);
+  font-size: var(--font-xs);
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+}
+
+.person-card {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  text-align: center;
+  color: var(--text-color);
+  border: 1px solid color-mix(in srgb, var(--border-color) 60%, transparent);
+  border-radius: var(--radius-lg);
+  background-image: linear-gradient(
+    var(--primary-bg-color),
+    var(--secondary-bg-color)
+  );
+  overflow: hidden;
+  perspective: 1000px;
+  cursor: pointer;
+  outline: none;
+  min-height: 280px;
+}
+
+.person-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.person-card:hover .person-card-inner,
+.person-card:focus-within .person-card-inner {
+  transform: rotateY(180deg);
+}
+
+.person-card-front,
+.person-card-back {
+  position: absolute;
+  inset: 0;
+  padding: var(--space-md);
+  backface-visibility: hidden;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-card-front {
+  justify-content: flex-start;
+}
+
+.person-card-back {
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.person-card-back .person-name {
+  margin-bottom: var(--space-sm);
+}
+
+.person-photo {
+  width: 90px;
+  aspect-ratio: 1 / 1;
+  margin: var(--space-xl) auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.person-card-front .person-name {
+  font-size: var(--font-sm);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xxs);
+  color: var(--text-color);
+}
+
+.person-card-front .person-description {
+  font-size: var(--font-sm);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-md);
+  color: var(--top-title-color);
+}
+
+/* .person-card-back {
+transform: rotateY(180deg);
+justify-content: center;
+align-items: flex-start;
+text-align: left;
+}
+
+
+.person-card-back .person-name {
+margin-bottom: var(--space-sm);
+} */
+
+.person-bullets {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.person-bullets li {
+  font-size: var(--font-sm);
+  color: var(--secondary-text-color);
+  margin-bottom: var(--space-xs);
+  line-height: 1.4;
+}
