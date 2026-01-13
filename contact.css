@@ -3,6 +3,7 @@ body {
   color: var(--text-color);
   font-family: Verdana, sans-serif;
   padding: var(--space-md);
+  margin-top: -15px;
 }
 
 .title {
@@ -19,8 +20,8 @@ body {
   margin-top: var(--space-lg);
   margin-left: var(--space-md);
   margin-right: var(--space-md);
-  /* background-color: red; */
 }
+
 .contact-form {
   border: 1px solid var(--pricing-border-color);
   border-radius: var(--radius-lg);
@@ -82,4 +83,61 @@ body {
 
 .range {
   padding: 0;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-md);
+}
+
+.reset-btn {
+  background-color: var(--color-navy-900);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-navy-600);
+  padding: var(--space-sm);
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: var(--color-blue-400);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  border: 1px solid var(--color-navy-600);
+  cursor: pointer;
+}
+
+
+#attachment {
+  padding: 8px 16px;
+  background-color: var(--color-navy-900);
+  color: var(--color-gray-300);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+
+#attachment:hover {
+  background-color: var(--color-navy-600); 
+}
+
+#attachment::file-selector-button {
+  padding: 8px 16px;
+  background-color: var(--color-blue-500);
+  /* color: var(--color-white); */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#attachment::file-selector-button:hover {
+  background-color: var(--file-hover);
 }

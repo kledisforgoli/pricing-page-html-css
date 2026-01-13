@@ -3,6 +3,7 @@ body {
   color: var(--text-color);
   font-family: Verdana, sans-serif;
   padding: var(--space-md);
+  margin-top: -15px;
 }
 
 .title {
@@ -16,7 +17,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-xl);
   margin-left: var(--space-md);
   margin-right: var(--space-md);
 }
@@ -37,16 +38,10 @@ body {
 
 .person-card {
   position: relative;
-  z-index: 2;
   padding: 0;
   text-align: center;
   color: var(--text-color);
-  border: 1px solid color-mix(in srgb, var(--border-color) 60%, transparent);
   border-radius: var(--radius-lg);
-  background-image: linear-gradient(
-    var(--primary-bg-color),
-    var(--secondary-bg-color)
-  );
   overflow: hidden;
   perspective: 1000px;
   cursor: pointer;
@@ -78,6 +73,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(
+    var(--primary-bg-color),
+    var(--secondary-bg-color)
+  );
+  border: 1px solid color-mix(in srgb, var(--border-color) 60%, transparent);
 }
 
 .person-card-front {
@@ -124,18 +124,6 @@ body {
   margin-bottom: var(--space-md);
   color: var(--top-title-color);
 }
-
-/* .person-card-back {
-transform: rotateY(180deg);
-justify-content: center;
-align-items: flex-start;
-text-align: left;
-}
-
-
-.person-card-back .person-name {
-margin-bottom: var(--space-sm);
-} */
 
 .person-bullets {
   padding-left: 18px;

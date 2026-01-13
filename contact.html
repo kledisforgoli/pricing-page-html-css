@@ -31,10 +31,10 @@
         <div class="row">
           <div class="input-container">
             <label for="name"
-              >Full Name:<span class="required-span">*</span></label
-            >
+              >Full Name:<span class="required-span">*</span></label>
             <input class="input" placeholder="Ardit Shala" id="emri" required />
           </div>
+          
           <div class="input-container">
             <label for="email"
               >Email: <span class="required-span">*</span>
@@ -45,11 +45,11 @@
         <div class="row">
           <div class="input-container">
             <label for="">Phone: </label>
-            <input class="input" placeholder="Ardit Shala" type="" id="numri" />
+            <input class="input" placeholder="+355 69 123 4567" type="" id="numri" />
             <span class="input-info">Format: digits, spaces,+,-,()</span>
           </div>
           <div class="input-container">
-            <label for="email">Company: </label>
+            <label for="">Company: </label>
             <input class="input" placeholder="Auora LLC" id="email" />
           </div>
         </div>
@@ -63,8 +63,9 @@
               type=""
               id="Subject"
               required
-            />
+              />
           </div>
+
           <div class="input-container">
             <label for="topic">Topic: </label>
             <select name="topic" class="input select" id="topic">
@@ -75,18 +76,20 @@
             </select>
           </div>
         </div>
+
         <div class="row">
           <div class="input-container">
-            <label for="message">Message: </label>
-            <textarea class="input" id="message"> </textarea>
+            <label for="message">Message:<span class="required-span">*</span> </label>
+            <textarea class="input" id="message" placeholder="Tell us about your needs..." required></textarea>
           </div>
         </div>
+
         <div class="row">
           <div class="input-container">
             <label for="date">Preferred Date: </label>
             <input
               class="input"
-              placeholder="Ardit Shala"
+              placeholder=""
               type="date"
               id="date"
             />
@@ -95,7 +98,7 @@
             <label for="time">Preferred Time: </label>
             <input
               class="input"
-              placeholder="Auora LLC"
+              placeholder=""
               id="time"
               type="time"
             />
@@ -106,7 +109,7 @@
             <label for="website">Website: </label>
             <input
               class="input"
-              placeholder="https://example..com"
+              placeholder="https://example.com"
               id="website"
             />
           </div>
@@ -114,7 +117,7 @@
             <label for="budget">Budget (Rough): </label>
             <input
               class="input range"
-              placeholder="Auora LLC"
+              placeholder=""
               id="budget"
               type="range"
               min="0"
@@ -123,6 +126,7 @@
             <span class="input-info">1-small, 5 large</span>
           </div>
         </div>
+        
         <div class="row">
           <div class="input-container">
             <label for="attachment">Attachment: </label>
@@ -134,13 +138,13 @@
           <fieldset class="input">
             <legend>How can we help:</legend>
             <div>
-              <input type="radio" id="demo" name="demo" value="email" />
+              <input type="radio" id="demo" name="help" value="demo" />
               <label for="demo">Demo</label>
-
-              <input type="radio" id="quote" name="quote" value="phone" />
+        
+              <input type="radio" id="quote" name="help" value="quote" />
               <label for="quote">Quote</label>
-
-              <input type="radio" id="support" name="support" value="mail" />
+        
+              <input type="radio" id="support" name="help" value="support" />
               <label for="support">Support</label>
             </div>
           </fieldset>
@@ -155,11 +159,16 @@
             <input class="input" type="checkbox" id="consent" required />
             <label for="consent"
               >I consent to having this website store my submitted information
-              <span class="required">*</span>
+              <span class="required-span">*</span>
             </label>
           </div>
         </div>
+        <div class="actions">
+          <input type="reset" class="reset-btn"></input>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </div>
       </form>
+
     </div>
   </body>
 </html>
