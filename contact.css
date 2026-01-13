@@ -127,7 +127,6 @@ input:user-invalid + span::before {
 #attachment::file-selector-button {
   padding: var(--space-sm) var(--space-md);
   background-color: var(--color-blue-500);
-  /* color: var(--color-white); */
   border: none;
   border-radius: var(--radius-md);
   cursor: pointer;
