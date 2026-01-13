@@ -2,38 +2,35 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   font-family: Verdana, sans-serif;
-  padding: var(--space-md);
-  margin-top: -15px;
+  padding: 0;
+  margin: 0;
 }
 
 .title {
   margin: 0;
-  margin-left: var(--space-md);
-  margin-right: var(--space-md);
-  margin-top: var(--space-xl);
 }
 
 .container {
+  padding: var(--space-md);
+}
+
+.card-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
   margin-top: var(--space-xl);
-  margin-left: var(--space-md);
-  margin-right: var(--space-md);
 }
 
 @media (min-width: 480px) {
-  .container {
+  .card-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.bottom-description {
+.subtitle {
   color: var(--secondary-text-color);
   margin-top: var(--space-md);
   font-size: var(--font-xs);
-  margin-left: var(--space-md);
-  margin-right: var(--space-md);
 }
 
 .person-card {
@@ -135,4 +132,12 @@ body {
   color: var(--secondary-text-color);
   margin-bottom: var(--space-xs);
   line-height: 1.4;
+}
+
+.footer {
+  font-size: var(--font-xs);
+  color: var(--color-gray-300);
+  text-align: center;
+  margin-top: var(--space-xxl);
+  padding: var(--space-md);
 }

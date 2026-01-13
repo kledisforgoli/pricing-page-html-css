@@ -5,9 +5,7 @@
   gap: var(--space-lg);
   margin-bottom: var(--space-lg);
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: var(--space-md);
-  margin-left: var(--space-sm);
-  margin-right: var(--space-sm);
+  padding: var(--space-md);
 
   position: sticky;
   top: 0;
@@ -15,11 +13,9 @@
   z-index: 100;
 }
 
-
 .hamburger-checkbox {
   display: none;
 }
-
 
 .hamburger {
   display: none;
@@ -38,9 +34,7 @@
   transition: all 0.3s ease;
 }
 
-
 .nav-menu {
-  margin-top: var(--space-md);
   display: flex;
   gap: var(--space-lg);
 }
@@ -85,6 +79,7 @@
   color: var(--text-color);
   text-decoration: none;
   font-size: var(--font-sm);
+  padding: 0;
 }
 
 .header .link:hover {
