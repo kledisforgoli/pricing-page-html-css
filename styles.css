@@ -57,7 +57,8 @@ body {
   padding: var(--space-md);
   text-align: center;
   color: var(--text-color);
-  border: 1px solid color-mix(in srgb, var(--border-color) 60%, transparent);
+  border: var(--border-xs) solid
+    color-mix(in srgb, var(--border-color) 60%, transparent);
   border-radius: var(--radius-lg);
   background-image: linear-gradient(
     var(--primary-bg-color),
@@ -159,11 +160,11 @@ body {
 .price-card > .action {
   background-color: var(--primary-bg-color);
   color: var(--text-color);
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+  padding: var(--space-sm);
+  border: var(--border-xs) solid var(--border-color);
+  border-radius: var(--radius-md);
   cursor: pointer;
-  font-size: 14px;
+  font-size: var(--font-xs);
   width: 100%;
   font-weight: var(--fw-bold);
 }
@@ -178,7 +179,7 @@ body {
 }
 
 .monthly-switcher {
-  border: 1px solid var(--border-color);
+  border: var(--border-xs) solid var(--border-color);
   border-radius: var(--radius-xl);
   display: flex;
   gap: var(--space-sm);
@@ -212,7 +213,7 @@ body {
   cursor: pointer;
   background-color: var(--secondary-bg-color);
   transition: var(--transition-default);
-  border-radius: 17px;
+  border-radius: var(--radius-lg);
 }
 
 .slider::before {

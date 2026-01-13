@@ -4,7 +4,7 @@
   justify-content: flex-end;
   gap: var(--space-lg);
   margin-bottom: var(--space-lg);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: var(--border-xs) solid var(--border-color);
   padding: var(--space-md);
 
   position: sticky;
@@ -20,7 +20,7 @@
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: var(--space-xs);
   cursor: pointer;
   padding: 8px;
   z-index: 101;
@@ -60,7 +60,7 @@
     text-align: center;
     transition: left 0.3s ease;
     padding: var(--space-lg) 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: var(--border-xs) solid var(--border-color);
     gap: var(--space-md);
     margin-top: var(--space-xl);
   }

@@ -74,7 +74,8 @@ body {
     var(--primary-bg-color),
     var(--secondary-bg-color)
   );
-  border: 1px solid color-mix(in srgb, var(--border-color) 60%, transparent);
+  border: var(--border-xs) solid
+    color-mix(in srgb, var(--border-color) 60%, transparent);
 }
 
 .person-card-front {
