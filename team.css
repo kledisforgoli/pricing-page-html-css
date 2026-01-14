@@ -124,7 +124,7 @@ body {
 }
 
 .person-bullets {
-  padding-left: 18px;
+  padding-left: var(--space-md);
   margin: 0;
 }
 

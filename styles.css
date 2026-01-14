@@ -1,5 +1,4 @@
 body {
-  margin-top: -15px;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   font-family: Verdana, sans-serif;
@@ -40,7 +39,7 @@ body {
 
 .price-wrapper {
   position: relative;
-  height: 2.5rem; /* adjust if needed */
+  height: 2.5rem;
   overflow: hidden;
 }
 
@@ -48,12 +47,12 @@ body {
   position: absolute;
   inset: -0px;
   pointer-events: none;
-  z-index: 5;
+  z-index: var(--z-20);
 }
 
 .price-card {
   position: relative;
-  z-index: 2;
+  z-index: var(--z-10);
   padding: var(--space-md);
   text-align: center;
   color: var(--text-color);
@@ -72,8 +71,8 @@ body {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  outline: 4px solid var(--accent-color);
-  outline-offset: -4px;
+  outline: var(--outline-lg) solid var(--accent-color);
+  outline-offset: calc(var(--outline-lg) * -1);
   clip-path: inset(100% 0 0 0);
   pointer-events: none;
   transition: clip-path 0.8s ease;
@@ -225,7 +224,7 @@ body {
   bottom: 2px;
   background-color: var(--switch-active-color);
   transition: var(--transition-default);
-  border-radius: 50%;
+  border-radius: var(--radius-full);
 }
 
 .switch input:checked + .slider {

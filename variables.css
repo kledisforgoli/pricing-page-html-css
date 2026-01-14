@@ -70,6 +70,14 @@
   --border-xs: 1px;
   --border-md: 2px;
 
+  --outline-lg: 4px;
+
   --transition-fast: 0.2s;
   --transition-default: 0.4s;
+
+  --z-10: 10;
+  --z-20: 20;
+
+  --z-100: 100;
+  --z-101: 101;
 }
