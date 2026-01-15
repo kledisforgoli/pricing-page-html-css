@@ -159,7 +159,7 @@ body {
 .price-card > .action {
   background-color: var(--primary-bg-color);
   color: var(--text-color);
-  padding: var(--space-sm);
+  padding: var(--space-md);
   border: var(--border-xs) solid var(--border-color);
   border-radius: var(--radius-md);
   cursor: pointer;
@@ -185,6 +185,7 @@ body {
   align-items: center;
   padding: var(--space-md);
   margin-top: var(--space-xl);
+  justify-content: center;
 }
 
 .monthly-switcher .label {
@@ -196,8 +197,8 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 17px;
+  width: 45px;
+  height: 25px;
 }
 
 .switch input {
@@ -218,10 +219,10 @@ body {
 .slider::before {
   content: "";
   position: absolute;
-  height: 13px;
-  width: 13px;
-  left: 2px;
-  bottom: 2px;
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 3px;
   background-color: var(--switch-active-color);
   transition: var(--transition-default);
   border-radius: var(--radius-full);
@@ -232,7 +233,7 @@ body {
 }
 
 .switch input:checked + .slider::before {
-  transform: translateX(13px);
+  transform: translateX(19px);
 }
 
 .annual {
@@ -325,22 +326,6 @@ body {
     transform: translateY(-60px) scale(0.5) rotate(720deg);
   }
 }
-
-/* .sparkle-1 {
-  top: 0;
-  left: 15%;
-  animation-delay: 0s;
-}
-.sparkle-2 {
-  top: 0;
-  left: 40%;
-  animation-delay: 0.3s;
-}
-.sparkle-3 {
-  top: 0;
-  right: 30%;
-  animation-delay: 0.6s;
-} */
 
 .sparkle-4 {
   bottom: 25%;
