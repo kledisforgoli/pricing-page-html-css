@@ -144,11 +144,11 @@ input:user-invalid + span::before {
   display: none;
 }
 
-#attachment:hover {
+.custom-file-label:hover {
   background-color: var(--color-navy-600);
 }
 
-#attachment::file-selector-button {
+/* #attachment::file-selector-button {
   display: none;
   padding: var(--space-sm) var(--space-md);
   background-color: var(--color-blue-500);
@@ -156,11 +156,11 @@ input:user-invalid + span::before {
   cursor: pointer;
   margin-right: var(--space-sm);
   transition: background-color 0.3s ease;
-}
+} */
 
-#attachment::file-selector-button:hover {
+/* #attachment::file-selector-button:hover {
   background-color: var(--file-hover);
-}
+} */
 
 .footer {
   font-size: var(--font-xs);
